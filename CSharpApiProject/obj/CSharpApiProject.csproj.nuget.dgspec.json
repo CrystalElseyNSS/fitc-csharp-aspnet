@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/crystalelsey/workspace/leo-events/CSharpApiProject/CSharpApiProject/CSharpApiProject.csproj": {}
+  },
+  "projects": {
+    "/Users/crystalelsey/workspace/leo-events/CSharpApiProject/CSharpApiProject/CSharpApiProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/crystalelsey/workspace/leo-events/CSharpApiProject/CSharpApiProject/CSharpApiProject.csproj",
+        "projectName": "CSharpApiProject",
+        "projectPath": "/Users/crystalelsey/workspace/leo-events/CSharpApiProject/CSharpApiProject/CSharpApiProject.csproj",
+        "packagesPath": "/Users/crystalelsey/.nuget/packages/",
+        "outputPath": "/Users/crystalelsey/workspace/leo-events/CSharpApiProject/CSharpApiProject/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/crystalelsey/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

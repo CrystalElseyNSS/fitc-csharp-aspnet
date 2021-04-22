@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{2C69D9E4-7669-41FA-BDD1-C52A369E8FCB}|Default">
+  <MonoDevelop.Ide.ItemProperties.CSharpApiProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CSharpApiProject/Repositories/PlotRepository.cs">
+    <Files>
+      <File FileName="CSharpApiProject/Startup.cs" Line="21" Column="1" />
+      <File FileName="CSharpApiProject/appsettings.json" Line="9" Column="23" />
+      <File FileName="CSharpApiProject/Program.cs" Line="12" Column="1" />
+      <File FileName="CSharpApiProject/Models/Gardener.cs" Line="8" Column="19" />
+      <File FileName="CSharpApiProject/Models/Plot.cs" Line="1" Column="1" />
+      <File FileName="CSharpApiProject/Repositories/GardenerRepository.cs" Line="104" Column="1" />
+      <File FileName="CSharpApiProject/Repositories/PlotRepository.cs" Line="65" Column="38" />
+      <File FileName="CSharpApiProject/Controllers/GardenerController.cs" Line="20" Column="54" />
+      <File FileName="CSharpApiProject/Controllers/GardenerController.cs" Line="36" Column="2" />
+      <File FileName="CSharpApiProject/Properties/launchSettings.json" Line="7" Column="47" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CSharpApiProject" expanded="True">
+            <Node name="CSharpApiProject" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="PlotRepository.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
