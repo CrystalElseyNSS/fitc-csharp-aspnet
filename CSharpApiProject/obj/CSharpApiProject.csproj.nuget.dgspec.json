@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/crystalelsey/workspace/leo-events/CSharpApiProject/CSharpApiProject/CSharpApiProject.csproj": {}
+    "/Users/crystalelsey/workspace/csharp-api-project/CSharpApiProject/CSharpApiProject.csproj": {}
   },
   "projects": {
-    "/Users/crystalelsey/workspace/leo-events/CSharpApiProject/CSharpApiProject/CSharpApiProject.csproj": {
+    "/Users/crystalelsey/workspace/csharp-api-project/CSharpApiProject/CSharpApiProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/crystalelsey/workspace/leo-events/CSharpApiProject/CSharpApiProject/CSharpApiProject.csproj",
+        "projectUniqueName": "/Users/crystalelsey/workspace/csharp-api-project/CSharpApiProject/CSharpApiProject.csproj",
         "projectName": "CSharpApiProject",
-        "projectPath": "/Users/crystalelsey/workspace/leo-events/CSharpApiProject/CSharpApiProject/CSharpApiProject.csproj",
+        "projectPath": "/Users/crystalelsey/workspace/csharp-api-project/CSharpApiProject/CSharpApiProject.csproj",
         "packagesPath": "/Users/crystalelsey/.nuget/packages/",
-        "outputPath": "/Users/crystalelsey/workspace/leo-events/CSharpApiProject/CSharpApiProject/obj/",
+        "outputPath": "/Users/crystalelsey/workspace/csharp-api-project/CSharpApiProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/crystalelsey/.config/NuGet/NuGet.Config"
@@ -38,9 +38,21 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.6, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -69,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }

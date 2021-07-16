@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using CSharpApiProject.Repositories;
+using CSharpApiProject.Data;
 
 namespace CSharpApiProject.Controllers
 {
@@ -9,27 +9,28 @@ namespace CSharpApiProject.Controllers
     public class PlotController : ControllerBase
     {
         private readonly PlotRepository _plotRepository;
-        public PlotController(IConfiguration configuration)
+        public PlotController(ApplicationDbContext context)
         {
-            _plotRepository = new PlotRepository(configuration);
+            _plotRepository = new PlotRepository(context);
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAllPlots()
         {
-            return Ok(_plotRepository.GetAllPlots());
+            var plots = _plotRepository.GetAllPlots();
+            return Ok(plots);
         }
 
-        //https://localhost:5001/api/plot/5
+        // https://localhost:5001/api/plot/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public IActionResult GetPlotById(int id)
         {
-            var singlePlot = _plotRepository.GetPlotById(id);
-            if (singlePlot == null)
+            var plot = _plotRepository.GetPlotById(id);
+            if (plot == null)
             {
                 return NotFound();
             }
-            return Ok(singlePlot);
+            return Ok(plot);
         }
     }
 }

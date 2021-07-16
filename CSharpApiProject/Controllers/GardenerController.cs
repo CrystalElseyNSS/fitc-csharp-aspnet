@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using CSharpApiProject.Repositories;
-using System;
+using CSharpApiProject.Data;
 
 namespace CSharpApiProject.Controllers
 {
@@ -10,27 +9,29 @@ namespace CSharpApiProject.Controllers
     public class GardenerController : ControllerBase
     {
         private readonly GardenerRepository _gardenerRepository;
-        public GardenerController(IConfiguration configuration)
+
+        public GardenerController(ApplicationDbContext context)
         {
-            _gardenerRepository = new GardenerRepository(configuration);
+            _gardenerRepository = new GardenerRepository(context);
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAllGardeners()
         {
-            return Ok(_gardenerRepository.GetAllGardeners());
+            var gardeners = _gardenerRepository.GetAllGardeners();
+            return Ok(gardeners);
         }
 
         //https://localhost:5001/api/gardener/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public IActionResult GetGardenerById(int id)
         {
-            var singleGardener = _gardenerRepository.GetGardenerById(id);
-            if (singleGardener == null)
+            var gardener = _gardenerRepository.GetGardenerById(id);
+            if (gardener == null)
             {
                 return NotFound();
             }
-            return Ok(singleGardener);
+            return Ok(gardener);
         }
     }
 }
